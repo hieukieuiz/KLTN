@@ -1,0 +1,60 @@
+{
+  "name": "cms.admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "deploy": "vue-cli-service build --no-clean",
+    "build": "vue-cli-service build --mode development --no-clean"
+  },
+  "description": "CMS.Admin",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@mdi/font": "^4.9.95",
+    "@microsoft/signalr": "^3.1.6",
+    "axios": "^0.18.0",
+    "js-cookie": "^2.2.0",
+    "oidc-client": "^1.10.1",
+    "qs": "^6.9.4",
+    "vee-validate": "^2.2.5",
+    "vue": "^2.6.11",
+    "vue-class-component": "^6.2.0",
+    "vue-google-charts": "^0.3.2",
+    "vue-moment": "^4.1.0",
+    "vue-perfect-scrollbar": "^0.1.0",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.1.6",
+    "vue-snotify": "^3.2.1",
+    "vue-the-mask": "^0.11.1",
+    "vue2-ace-editor": "0.0.15",
+    "vue2-filters": "^0.3.0",
+    "vue2-perfect-scrollbar": "^1.5.0",
+    "vuedraggable": "^2.24.1",
+    "vuetify": "^2.2.27",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.21",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-typescript": "^3.12.1",
+    "@vue/cli-service": "^4.3.1",
+    "node-sass": "^4.14.1",
+    "register-service-worker": "^1.7.1",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

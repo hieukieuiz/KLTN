@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Tasks\**" />
+    <Compile Remove="IO\**" />
+    <Compile Remove="Services\Media_Archive\**" />
+    <Compile Remove="Services\Tasks\**" />
+    <Compile Remove="Utilities\Threading\**" />
+    <EmbeddedResource Remove="Entities\Tasks\**" />
+    <EmbeddedResource Remove="IO\**" />
+    <EmbeddedResource Remove="Services\Media_Archive\**" />
+    <EmbeddedResource Remove="Services\Tasks\**" />
+    <EmbeddedResource Remove="Utilities\Threading\**" />
+    <None Remove="Entities\Tasks\**" />
+    <None Remove="IO\**" />
+    <None Remove="Services\Media_Archive\**" />
+    <None Remove="Services\Tasks\**" />
+    <None Remove="Utilities\Threading\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utilities\ActionDisposable.cs" />
+    <Compile Remove="Utilities\DictionaryConverter.cs" />
+    <Compile Remove="Utilities\FileDownloadManager.cs" />
+    <Compile Remove="Utilities\HashCodeCombiner.cs" />
+    <Compile Remove="Utilities\ImagingHelper.cs" />
+    <Compile Remove="Utilities\Inflector.cs" />
+    <Compile Remove="Utilities\ObjectDumper.cs" />
+    <Compile Remove="Utilities\Prettifier.cs" />
+    <Compile Remove="Utilities\Range.cs" />
+    <Compile Remove="Utilities\SeoHelper.cs" />
+    <Compile Remove="Utilities\SmartSyndicationFeed.cs" />
+    <Compile Remove="Utilities\StringTokenizer.cs" />
+    <Compile Remove="Utilities\Throttle.cs" />
+    <Compile Remove="Utilities\TypeHelper.cs" />
+    <Compile Remove="Utilities\Watermarker.cs" />
+    <Compile Remove="Utilities\Wildcard.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="CronExpressionDescriptor" Version="2.15.0" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="7.17.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="ncrontab" Version="3.3.1" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="Events\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Interfaces\Services\Enums\" />
+  </ItemGroup>
+
+</Project>

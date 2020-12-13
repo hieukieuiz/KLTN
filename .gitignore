@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Insight_HVIT/v16
+/.vs/Insight_HVIT/DesignTimeBuild
+/.vs/Insight_HVIT/config
+/CMS.Core/bin
+/CMS.Core/obj
+/CMS.Web/bin/Debug/netcoreapp3.1
+/CMS.Infrastructure/obj
+/CMS.Infrastructure/bin
+/CMS.Core/CMS.Core.csproj.user
+/CMS.Web/.config
+/CMS.Infrastructure/CMS.Infrastructure.csproj.user
+/CMS.Web/ClientApp/node_modules
+/CMS.Web/ClientApp/package-lock.json
+/CMS.Web/Connected Services/Application Insights
+/CMS.Web/obj
+/CMS.Web/wwwroot/clientApp
+/CMS.Web/wwwroot/ClientApp_MediaFilesManager
+/CMS.Web/wwwroot/client_public
+/CMS.Web/wwwroot/Exports/print_template
+/CMS.Web/wwwroot/FilesUpload/Anh
+/CMS.Web/wwwroot/MediaFiles
+/CMS.Web/CMS.Web.csproj.user
+/.vs

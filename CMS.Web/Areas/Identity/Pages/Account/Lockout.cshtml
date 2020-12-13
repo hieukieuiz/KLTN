@@ -1,0 +1,13 @@
+﻿@page
+@model LockoutModel
+@{
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    ViewData["Title"] = "Khóa tài khoản";
+}
+
+<header>
+    <h1 class="text-danger">@ViewData["Title"]</h1>
+    <p class="text-danger">
+        Tài khoản này đã bị khóa, vui lòng thử lại sau.
+    </p>
+</header>

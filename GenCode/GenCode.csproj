@@ -1,0 +1,1314 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Core\CMS.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Gen\outputAPIs\BaiTapController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\BaiTestTuyenDungController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTestTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\BaiThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\BaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\BaiTuyenDungController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\BangCapUngVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BangCapUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\BaoCaoController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaoCao.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CauHinhDoKhoController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHinhDoKho.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CauHoiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CauHoiPhongVan - CopyController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CauHoiPhongVanController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ChiTietBaiThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ChiTietCongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ChiTietDapAnDeThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDapAnDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ChiTietDeThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ChiTietTepLamController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietTepLam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\CVUngVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\CVUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DangCauHoiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DangCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DangHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DangKyHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangKyHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DanhGiaChungUngVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DanhGiaChungUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DapAnCauHoiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DapAnCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DeThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DiemDanhNhanVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DiemDanhNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DoanhNghiepController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DoanhNghiep.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DotTuyenSinh - CopyController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DotTuyenSinhController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DownloadController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\Download.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\DuAnController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\FileUploadController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\FileUpload.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\GoiCongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\GoogleAppApiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoogleAppApi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\HienThiDeThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\HienThiDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\HoatDongNhanVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HoatDongNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\HocLieuChiTietMonController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocLieuChiTietMon.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\HocVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KetQuaBaiThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KetQuaBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KhoaHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KhoaMonHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaMonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KhoCauHoiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KhoCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KyNangCongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KyNangCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KyNangController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\KyNangUngVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNangUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LamBaiTapController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LamBaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LichSuChiTietCongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LichSuChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LinhVucThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\LinhVucThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LinkVideoBaiGiangController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LinkVideoBaiGiang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LoaiCongViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LoaiHocLieuController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiHocLieu.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LoaiKyNangController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LoaiYeuCauController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\LoaiYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\LopHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LopHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MediaFileController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFile.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MediaFolderController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFolder.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MediaStorageController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaStorage.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MonHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MucDoController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\MucDo.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\MucThongTinController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MucThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\NguoiDungController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NguoiDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\NguonDeThiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\NguonDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\NhanVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\NhomKyNangController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\NhomKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\PhanViecController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\PhanViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\QuanHuyenController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuanHuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\QuaTrinhHocTapController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhHocTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\QuaTrinhLamDuAnController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhLamDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\QuyenController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Quyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\QuyenDuAnController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuyenDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ScheduleTaskController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTask.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ScheduleTaskHistoryController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTaskHistory.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TepYeuCauController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TepYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ThanhVienDuAnController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThanhVienDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TheoDoiThongTinController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TheoDoiThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\ThongTinController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TienDoHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TienDoHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TinhThanhController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TinhThanh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TrangThaiController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThai.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TrangThaiDuAnController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThaiDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TrungTamController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrungTam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\TruongDaiHocController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TruongDaiHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\UngTuyenController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngTuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\UngVienController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\UngVienLamBaiTestController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVienLamBaiTest.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\VanDePhongVanController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\VanDePhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\XaPhuongController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\XaPhuong.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputAPIs\YeuCauController.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\YeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\BaiTestTuyenDungDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTestTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\BaiThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\BaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\BaiTuyenDungDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\BangCapUngVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BangCapUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\BaoCaoDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaoCao.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\CauHinhDoKhoDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHinhDoKho.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\CauHoiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\CauHoiPhongVan - CopyDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ChiTietBaiThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ChiTietCongViecDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ChiTietDapAnDeThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDapAnDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ChiTietDeThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\CongViecDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\CVUngVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\CVUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DangCauHoiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DangCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DangKyHocDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangKyHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DanhGiaChungUngVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DanhGiaChungUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DapAnCauHoiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DapAnCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DeThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DiemDanhHocVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DiemDanhHocVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DoanhNghiepDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DoanhNghiep.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DotTuyenSinh - CopyDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DotTuyenSinhDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DownloadDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\Download.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\DuAnDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\FileUploadDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\FileUpload.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\HienThiDeThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\HienThiDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\HocVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\KetQuaBaiThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KetQuaBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\KhoCauHoiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KhoCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\KyNangDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\KyNangUngVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNangUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LamBaiTapDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LamBaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LichSuChiTietCongViecDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LichSuChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LinhVucThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\LinhVucThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LoaiCongViecDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LoaiYeuCauDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\LoaiYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\LopHocDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LopHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\MediaFileDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFile.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\MediaFolderDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFolder.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\MediaStorageDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaStorage.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\MucDoDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\MucDo.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\NguonDeThiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\NguonDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\NhanVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\NhomKyNangDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\NhomKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\PhanViecDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\PhanViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\QuanHuyenDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuanHuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\QuaTrinhHocTapDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhHocTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\QuaTrinhLamDuAnDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhLamDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\QuyenDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Quyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\QuyenDuAnDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuyenDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ScheduleTaskDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTask.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ScheduleTaskHistoryDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTaskHistory.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\ThanhVienDuAnDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThanhVienDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\TinhThanhDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TinhThanh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\TrangThaiDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThai.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\TrangThaiDuAnDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThaiDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\TruongDaiHocDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TruongDaiHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\UngTuyenDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngTuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\UngVienDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\UngVienLamBaiTestDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVienLamBaiTest.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\XaPhuongDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\XaPhuong.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputDTOs\YeuCauDTO.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\YeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBaiTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBaiTestTuyenDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTestTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\BaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBaiTuyenDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBangCapUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BangCapUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IBaoCaoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaoCao.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICauHinhDoKhoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHinhDoKho.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICauHoiPhongVan - CopyService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICauHoiPhongVanService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IChiTietBaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IChiTietCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IChiTietDapAnDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDapAnDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IChiTietDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IChiTietTepLamService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietTepLam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ICVUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\CVUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDangCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DangCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDangHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDangKyHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangKyHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDanhGiaChungUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DanhGiaChungUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDapAnCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DapAnCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDiemDanhNhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DiemDanhNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDoanhNghiepService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DoanhNghiep.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDotTuyenSinh - CopyService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDotTuyenSinhService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDownloadService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\Download.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IFileUploadService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\FileUpload.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IGoiCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IGoogleAppApiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoogleAppApi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IHienThiDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\HienThiDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IHoatDongNhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HoatDongNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IHocLieuChiTietMonService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocLieuChiTietMon.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IHocVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKetQuaBaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KetQuaBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKhoaHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKhoaMonHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaMonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKhoCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KhoCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKyNangCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KyNangCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IKyNangUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNangUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILamBaiTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LamBaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILichSuChiTietCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LichSuChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILinhVucThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\LinhVucThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILinkVideoBaiGiangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LinkVideoBaiGiang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILoaiCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILoaiHocLieuService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiHocLieu.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILoaiKyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILoaiYeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\LoaiYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ILopHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LopHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMediaFileService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFile.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMediaFolderService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFolder.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMediaStorageService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaStorage.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMonHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMucDoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\MucDo.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IMucThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MucThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\INguoiDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NguoiDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\INguonDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\NguonDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\INhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\INhomKyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\NhomKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IPhanViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\PhanViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IQuanHuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuanHuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IQuaTrinhHocTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhHocTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IQuaTrinhLamDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhLamDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IQuyenDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuyenDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IQuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Quyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IScheduleTaskHistoryService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTaskHistory.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IScheduleTaskService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTask.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITepYeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TepYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IThanhVienDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThanhVienDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITheoDoiThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TheoDoiThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITienDoHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TienDoHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITinhThanhService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TinhThanh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITrangThaiDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThaiDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITrangThaiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThai.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITrungTamService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrungTam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\ITruongDaiHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TruongDaiHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IUngTuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngTuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IUngVienLamBaiTestService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVienLamBaiTest.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IVanDePhongVanService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\VanDePhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IXaPhuongService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\XaPhuong.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputInterfaces\IYeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\YeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BaiTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BaiTestTuyenDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTestTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\BaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BaiTuyenDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BaiTuyenDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BangCapUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\BangCapUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\BaoCaoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\BaoCao.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CauHinhDoKhoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHinhDoKho.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CauHoiPhongVan - CopyService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CauHoiPhongVanService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CauHoiPhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\CauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ChiTietBaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ChiTietCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ChiTietDapAnDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDapAnDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ChiTietDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\ChiTietDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ChiTietTepLamService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ChiTietTepLam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\CongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\CVUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\CVUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DangCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DangCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DangHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DangKyHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DangKyHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DanhGiaChungUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DanhGiaChungUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DapAnCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DapAnCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\DeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DiemDanhNhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DiemDanhNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DoanhNghiepService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\DoanhNghiep.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DotTuyenSinh - CopyService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh - Copy.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DotTuyenSinhService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DotTuyenSinh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DownloadService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\Download.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\DuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\DuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\FileUploadService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\FileUpload.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\GoiCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\GoogleAppApiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\GoogleAppApi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\HienThiDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\HienThiDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\HoatDongNhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HoatDongNhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\HocLieuChiTietMonService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocLieuChiTietMon.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\HocVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\HocVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KetQuaBaiThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KetQuaBaiThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KhoaHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KhoaMonHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KhoaMonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KhoCauHoiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\KhoCauHoi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KyNangCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\KyNangCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\KyNangUngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\KyNangUngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LamBaiTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LamBaiTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LichSuChiTietCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LichSuChiTietCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LinhVucThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\LinhVucThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LinkVideoBaiGiangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LinkVideoBaiGiang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LoaiCongViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiCongViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LoaiHocLieuService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiHocLieu.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LoaiKyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LoaiKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LoaiYeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\LoaiYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\LopHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\LopHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MediaFileService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFile.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MediaFolderService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaFolder.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MediaStorageService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Media\MediaStorage.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MonHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MonHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MucDoService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\MucDo.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\MucThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\MucThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\NguoiDungService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NguoiDung.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\NguonDeThiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TestOnline\NguonDeThi.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\NhanVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\NhanVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\NhomKyNangService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\NhomKyNang.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\PhanViecService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\PhanViec.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\QuanHuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuanHuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\QuaTrinhHocTapService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhHocTap.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\QuaTrinhLamDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\QuaTrinhLamDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\QuyenDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\QuyenDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\QuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Quyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ScheduleTaskHistoryService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTaskHistory.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ScheduleTaskService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Commons\ScheduleTask.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TepYeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TepYeuCau.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ThanhVienDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThanhVienDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TheoDoiThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TheoDoiThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\ThongTinService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\ThongTin.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TienDoHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TienDoHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TinhThanhService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TinhThanh.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TrangThaiDuAnService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThaiDuAn.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TrangThaiService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrangThai.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TrungTamService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TrungTam.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\TruongDaiHocService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\TruongDaiHoc.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\UngTuyenService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngTuyen.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\UngVienLamBaiTestService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVienLamBaiTest.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\UngVienService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\UngVien.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\VanDePhongVanService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\VanDePhongVan.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\XaPhuongService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\XaPhuong.cs</CustomToolNamespace>
+    </Compile>
+    <Compile Update="Gen\outputServices\YeuCauService.cs">
+      <CustomToolNamespace>..\CMS.Core\Entities\Interview\YeuCau.cs</CustomToolNamespace>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Gen\outputTypescriptAPIs\BaiTapApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\BaiTapController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\BaiTuyenDungApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\BaiTuyenDungController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\BangCapUngVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\BangCapUngVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\BaoCaoApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\BaoCaoController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\CauHoiKhaoSatApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhaoSat\CauHoiKhaoSatController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\CauHoiPhongVanApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\CauHoiPhongVanController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\ChiTietCongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\ChiTietCongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\ChiTietMonHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\ChiTietMonHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\ChiTietTepLamApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\ChiTietTepLamController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\CongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\CongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\CVUngVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\CVUngVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DangCauHoiApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhaoSat\DangCauHoiController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DangHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DangHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DangKyHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DangKyHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DapAnCauHoiApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhaoSat\DapAnCauHoiController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DiemDanhHocVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DiemDanhHocVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DiemDanhNhanVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DiemDanhNhanVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DoanhNghiepApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\DoanhNghiepController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DotTuyenSinhApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DotTuyenSinhController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\DuAnApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\DuAnController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\GoiCongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\GoiCongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\HoatDongNhanVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\HoatDongNhanVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\HocLieuChiTietMonApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\HocLieuChiTietMonController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\HocVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\HocVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KhaoSatApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhaoSat\KhaoSatController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KhoaHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhoaHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KhoaMonHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KhoaMonHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KyNangApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\KyNangController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KyNangCongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\KyNangCongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\KyNangUngVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\KyNangUngVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LamBaiTapApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LamBaiTapController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LichHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LichHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LichSuChiTietCongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LichSuChiTietCongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LoaiCongViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LoaiCongViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LoaiHocLieuApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LoaiHocLieuController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LoaiKyNangApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LoaiKyNangController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LopHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LopHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\LyDoThamGiaApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\LyDoThamGiaController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\MediaApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\MediaController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\MonHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\MonHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\MucThongTinApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\MucThongTinController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\NhanVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\NhanVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\NhomKyNangApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\NhomKyNangController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\PhanViecApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\PhanViecController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\PlexApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\PlexController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\QuanHuyenApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\QuanHuyenController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\QuaTrinhHocTapApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\QuaTrinhHocTapController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\QuaTrinhLamDuAnApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\QuaTrinhLamDuAnController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\QuyenApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\QuyenController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\QuyenDuAnApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\QuyenDuAnController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TepYeuCauApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TepYeuCauController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\ThanhVienDuAnApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\ThanhVienDuAnController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TheoDoiThongTinApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TheoDoiThongTinController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\ThongTinApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\ThongTinController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TienDoHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TienDoHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TinhThanhApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TinhThanhController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TrangThaiApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TrangThaiController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TrangThaiDuAnApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TrangThaiDuAnController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TrangThaiHocVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TrangThaiHocVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TrungTamApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TrungTamController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TruongDaiHocApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TruongDaiHocController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\TuongTacApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\TuongTacController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\UngVienApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\Interview\UngVienController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\UserApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\UserController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\UsersApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\UsersController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\VanDePhongVanApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\VanDePhongVanController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\VideoBaiGiangApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\VideoBaiGiangController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\VideoPlayerApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\VideoPlayerController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptAPIs\XaPhuongApi.ts">
+      <CustomToolNamespace>..\CMS.Web\Apis\XaPhuongController.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\BaiTestTuyenDungDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\BaiTestTuyenDungDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\BaiTuyenDungDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\BaiTuyenDungDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\BangCapUngVienDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\BangCapUngVienDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\BaoCaoDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\BaoCaoDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\ChiTietCongViecDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\ChiTietCongViecDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\CongViecDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\CongViecDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\CVUngVienDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\CVUngVienDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\DangKyHocDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\DangKyHocDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\DoanhNghiepDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\DoanhNghiepDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\DotTuyenSinhDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\DotTuyenSinhDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\DuAnDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\DuAnDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\GiamSatHocTapDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\GiamSatHocTapDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\HocVienDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\HocVienDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\KyNangDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\KyNangDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\KyNangUngVienDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\KyNangUngVienDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\LichSuChiTietCongViecDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\LichSuChiTietCongViecDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\LoaiCongViecDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\LoaiCongViecDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\LoaiYeuCauDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\LoaiYeuCauDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\LopHocDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\LopHocDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\MediaFileDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Media\MediaFileDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\MediaFolderDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Media\MediaFolderDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\MediaStorageDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Media\MediaStorageDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\NhomKyNangDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\NhomKyNangDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\PagedResult.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\PagedResult.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\Pagination.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Pagination.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\PhanViecDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\PhanViecDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\QuanHuyenDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\QuanHuyenDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\QuaTrinhHocTapDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\QuaTrinhHocTapDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\QuaTrinhLamDuAnDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\QuaTrinhLamDuAnDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\QuyenDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\QuyenDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\QuyenDuAnDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\QuyenDuAnDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\ThanhVienDuAnDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\ThanhVienDuAnDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\TinhThanhDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\TinhThanhDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\TrangThaiDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\TrangThaiDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\TrangThaiDuAnDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\TrangThaiDuAnDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\TruongDaiHocDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\TruongDaiHocDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\UngTuyenDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\UngTuyenDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\UngVienDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\UngVienDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\UserDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\UserDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\XaPhuongDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\XaPhuongDTO.cs</CustomToolNamespace>
+    </None>
+    <None Update="Gen\outputTypescriptDTOs\YeuCauDTO.ts">
+      <CustomToolNamespace>..\CMS.Web\ApiModels\Interview\YeuCauDTO.cs</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+</Project>

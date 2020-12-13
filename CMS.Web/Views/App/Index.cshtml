@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link href="/static/css/main.css?v0.1" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100:300,400,500,700,900|Material+Icons" rel="stylesheet"><script src="/lib/ckfinder/ckfinder.js"></script><script src="/static/ckeditor/ckeditor.js"></script><title>Insight</title><style>[v-cloak] {
+            display: none;
+        }</style><link href="/clientApp/css/app.45e4ae8e.css" rel="preload" as="style"><link href="/clientApp/css/chunk-vendors.2d9c0969.css" rel="preload" as="style"><link href="/clientApp/js/app.231cab01.js" rel="preload" as="script"><link href="/clientApp/js/chunk-vendors.5ddbd665.js" rel="preload" as="script"><link href="/clientApp/css/chunk-vendors.2d9c0969.css" rel="stylesheet"><link href="/clientApp/css/app.45e4ae8e.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but my-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>if (window.location.hash && window.location.hash === "#_=_") {
+            window.location.hash = "";
+        }
+        (function () {
+            // make vuetify dialogs movable
+            const d = {};
+            document.addEventListener("mousedown", (e) => {
+                const closestDialog = e.target.closest(".v-dialog.v-dialog--active");
+                if (
+                    e.button === 0 &&
+                    closestDialog != null &&
+                    e.target.classList.contains("v-card__title")
+                ) {
+                    // element which can be used to move element
+                    d.el = closestDialog; // element which should be moved
+                    d.mouseStartX = e.clientX;
+                    d.mouseStartY = e.clientY;
+                    d.elStartX = d.el.getBoundingClientRect().left;
+                    d.elStartY = d.el.getBoundingClientRect().top;
+                    d.el.style.position = "fixed";
+                    d.el.style.margin = 0;
+                    d.oldTransition = d.el.style.transition;
+                    d.el.style.transition = "none";
+                }
+            });
+            document.addEventListener("mousemove", (e) => {
+                if (d.el === undefined) return;
+                d.el.style.left =
+                    Math.min(
+                        Math.max(
+                            d.elStartX + e.clientX - d.mouseStartX,
+                            -(d.el.getBoundingClientRect().width - 100)
+                        ),
+                        window.innerWidth - 100
+                    ) + "px";
+                d.el.style.top =
+                    Math.min(
+                        Math.max(d.elStartY + e.clientY - d.mouseStartY, 0),
+                        window.innerHeight - 100
+                    ) + "px";
+            });
+            document.addEventListener("mouseup", () => {
+                if (d.el === undefined) return;
+                d.el.style.transition = d.oldTransition;
+                d.el = undefined;
+            });
+            setInterval(() => {
+                // prevent out of bounds
+                const dialog = document.querySelector(".v-dialog.v-dialog--active");
+                if (dialog === null) return;
+                dialog.style.left =
+                    Math.min(parseInt(dialog.style.left), window.innerWidth - 100) +
+                    "px";
+                dialog.style.top =
+                    Math.min(parseInt(dialog.style.top), window.innerHeight - 100) +
+                    "px";
+            }, 100);
+        })();</script><script src="/clientApp/js/chunk-vendors.5ddbd665.js"></script><script src="/clientApp/js/app.231cab01.js"></script></body></html>

@@ -1,0 +1,4 @@
+D:\doan\GenCode\obj\Debug\netstandard2.1\GenCode.csprojAssemblyReference.cache
+D:\doan\GenCode\obj\Debug\netstandard2.1\GenCode.AssemblyInfoInputs.cache
+D:\doan\GenCode\obj\Debug\netstandard2.1\GenCode.AssemblyInfo.cs
+D:\doan\GenCode\obj\Debug\netstandard2.1\GenCode.csproj.CoreCompileInputs.cache
